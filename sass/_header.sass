@@ -1,0 +1,157 @@
+.header
+	font-family: $m
+	font-size: 13px
+	margin-bottom: 22px
+	&1
+		margin-bottom: 0
+	
+	&-main
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&-logo
+		background: url(../img/header/logo.png) center no-repeat
+		background-size: 100%
+		width: 90px
+		height: 72px
+		margin-left: 2px
+		margin-top: 24px
+
+	&-adress
+		display: flex
+		align-items: center
+		margin-top: 44px
+		&__img
+			width: 14px
+			margin-right: 19px
+			& img
+				width: 100%
+
+	&-mail
+		display: flex
+		margin-top: 50px
+		&__img
+			margin-right: 19px
+		&__text
+			text-decoration: underline
+			& a:hover
+				color: $color-blue
+
+	&-phone
+		margin-top: 37px
+		text-align: right
+		&__numbers
+			font-size: 18px
+			margin-left: 29px
+			& a:hover
+				color: $color-blue
+		&__text
+			font-family: $nova
+			text-decoration: underline
+			& a
+				color: #00d1f9
+				&:hover
+					color: #ffffff
+		.block
+			margin-top: 0
+	
+
+.navigation
+	.nav
+		padding-left: 17px
+	li
+		display: inline
+		font-size: 13px
+		font-weight: 400
+		text-transform: uppercase
+		border-top: 1px solid #3f3f3f
+		border-bottom: 1px solid #3f3f3f
+		padding: 14px 40px
+		&:nth-child(1)
+			padding-left: 33px
+		&:nth-child(7)
+			padding-right: 34px
+		& a:hover
+			cursor: pointer
+			color: $color-blue
+		
+
+.menu
+	&-link
+		z-index: 11
+		display: none
+		width: 50px
+		height: 50px
+		position: fixed
+		top: 29px
+		left: 9px
+		margin-top: -6px
+		background-color: rgba(255, 255, 255, 0.9)
+		border-radius: 50%
+		box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4)
+		span, span:before, span:after
+			display: block
+			height: 2px
+			width: 18px
+			position: absolute
+			left: 50%
+			margin-left: -9px
+			top: 50%
+			margin-top: -1px
+			background-color: #333333
+		span:before
+			transition: all 0.2s
+			content: ''
+			margin-top: -6px 
+		span:after
+			transition: all 0.2s
+			content: ''
+			margin-top: 4px
+		&_active span
+			background-color: transparent
+			&:before
+				transform: rotate(45deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-45deg)
+				margin-top: 0
+	opacity: 0.9
+	background-color: $color-dark
+	position: fixed
+	width: 55vh
+	height: 100vh
+	z-index: 10
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: -150vw
+	&_active
+		left: 0
+		top: 0
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+		li
+			width: 63vh
+		a
+			display: block
+			width: 100%
+			line-height: 3
+			font-weight: 100
+			color: #ffffff
+			letter-spacing: 4px
+			transition: all 0.2s
+			font-family: $nova
+			&:hover
+				background-color: rgba(255, 255, 255, 0.4)
+				width: 100%
+				text-decoration: none
+				color: $color-blue
+
+
+
+
+

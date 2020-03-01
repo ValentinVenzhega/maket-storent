@@ -1,0 +1,89 @@
+.order
+	position: relative
+	display: flex
+	padding-top: 100px
+	padding-bottom: 100px
+	height: 566px
+	background-size: cover
+	background: #373737 url(../img/background1.jpg) 51% 20% repeat
+	color: #ffffff
+	&-main
+		position: relative
+	&-block
+		text-align: center
+		&__img1
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				z-index: 1
+				width: 98px
+				height: 98px
+				margin-left: -51px
+	   margin-top: -20px
+				border: 1.5px solid #ffffff
+				border-radius: 50%	
+			&:hover ~ .arrow-order
+				display: block
+		&__img2
+			&:hover ~ .arrow-order1
+				display: block
+		&__img3
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				z-index: 1
+				width: 98px
+				height: 98px
+				margin-left: -49px
+	   margin-top: -30px
+				border: 1.5px solid #ffffff
+				border-radius: 50%
+			&:hover ~ .arrow-order2
+				display: block
+		&__img4
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				z-index: 1
+				width: 98px
+				height: 98px
+				margin-left: -49px
+	   margin-top: -25px
+				border: 1.5px solid #ffffff
+				border-radius: 50%
+		&__text
+			margin-top: 52px
+			&2
+				min-height: 83px
+				margin-top: 24px
+			&4
+				min-height: 83px
+				margin-top: 52px
+.block
+	display: block
+	color: $color-blue-first
+	font-size: 15px
+	font-weight: 300
+	text-decoration: underline
+	margin-top: 25px
+	cursor: pointer
+
+
+.arrow-order
+	display: none
+	position: absolute 
+	right: -25%
+	top: 10%
+.arrow-order1
+	display: none
+	position: absolute
+	right: -28%
+	top: 18%
+.arrow-order2
+	display: none
+	position: absolute
+	right: -27%
+	top: 5%

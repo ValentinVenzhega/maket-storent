@@ -1,0 +1,75 @@
+.section
+	&-title
+		font-size: 36px
+		text-align: center
+		margin-bottom: 100px
+		&::after
+			margin-top: 25px
+			content: ''
+			display: block
+			height: 7px
+			background: url(../img/delivery/line.png) center no-repeat
+
+.button
+	font-size: 13px
+	font-weight: 700
+	background-color: #ffffff
+	border: 1px solid transparent
+	color: $color-blue-first
+	width: 200px
+	height: 55px
+	font-family: $nova-b
+	&:hover
+		background-color: $color-blue-first
+		cursor: pointer
+		color: #ffffff
+		& img
+			display: none
+
+	&-o
+		background-color: $color-blue-first
+		color: #ffffff
+		text-transform: uppercase
+
+		&:hover
+			background-color:  #ffffff
+			cursor: pointer
+			color: $color-blue-first
+			border: 1px solid $color-blue-first
+
+.bg
+	max-height: 810px
+	background-size: cover
+	background: #373737 url(../img/background.png) 51% 20% no-repeat
+
+	
+.slider-arrow-materials
+	position: absolute
+	top: -29px
+	z-index: 9
+	height: 100%
+	width: 22px
+
+	&_prod
+		&:hover
+			cursor: pointer
+	&_right
+		right: -68px
+		background: url(../img/materials/arrow-right.png) center no-repeat
+		&:hover
+			background: url(../img/materials/arrow-right1.svg) center no-repeat
+	&_right1
+		right: 17px 
+		background: url(../img/materials/arrow-right.png) center no-repeat
+		&:hover
+			background: url(../img/materials/arrow-right1.svg) center no-repeat
+	&_left
+		left: -68px 
+		background: url(../img/materials/arrow-left.png) center no-repeat
+		&:hover
+			background: url(../img/materials/arrow-left1.svg) center no-repeat
+	&_left1
+		left: 17px
+		background: url(../img/materials/arrow-left.png) center no-repeat
+		&:hover
+			background: url(../img/materials/arrow-left1.svg) center no-repeat
